@@ -1,7 +1,9 @@
 # LabOOP-java-
-works on java for university.
+Works on java for university.
 
-some of my first projects in learning java
+Some of my first projects in learning java
+
+У цьому файлі буде зберігатись початкова інформація для виконання лабораторних робіт, дякую за розуміння
 
 Номер заліковки: 28
 
