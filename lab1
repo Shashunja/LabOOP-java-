@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class lab1 {
+    public static void main(String[] args) {
+        while (true) {
+            Scanner in = new Scanner(System.in);
+
+            float result = 0.0F;
+            int C = 1;
+            byte i, j;
+
+            try {
+                System.out.print("add i index");
+                i = in.nextByte();
+                System.out.print("add j index");
+                j = in.nextByte();
+            }
+            catch (Exception ex){
+                System.out.print("you typed a wrong number, try integer number between -128 and 127, and not -1");
+                break;
+            }
+
+            in.close();
+
+            for (int a = i; a < 5; a++) {
+                for (int b = j; b < 5; b++) {
+                    try {
+                        result += (i + j) / (i + C);
+                    }
+                    catch (Exception ex){
+                        System.out.print("with your i index number program has to divide by zero." +
+                                " Try again and type something else!");
+                        return;
+                    }
+                }
+            }
+
+            System.out.printf("Your result: %f \n", result);
+            break;
+        }
+    }
+}
