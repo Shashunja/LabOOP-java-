@@ -5,7 +5,7 @@ public class lab1 {
             Scanner in = new Scanner(System.in);
 
             float result = 0.0F;
-            int C = 1;
+            int C = 1, n, m;
             byte i, j;
 
             try {
@@ -14,21 +14,25 @@ public class lab1 {
                 System.out.print("add j index");
                 j = in.nextByte();
             }
-            catch (Exception ex){
-                System.out.print("you typed a wrong number, try integer number between -128 and 127, and not -1");
+            catch (Exception wrongnumber){
+                System.out.print("you typed a wrong number, try integer number between -128 and 127, and not -1 for i");
                 break;
             }
+            System.out.print("add n limit");
+            n = in.nextInt();
+            System.out.print("add m limit");
+            m = in.nextInt();
 
             in.close();
 
-            for (int a = i; a < 5; a++) {
-                for (int b = j; b < 5; b++) {
+            for (int a = i; a <= n; a++) {
+                for (int b = j; b <= m; b++) {
                     try {
                         result += (i + j) / (i + C);
                     }
-                    catch (Exception ex){
+                    catch (Exception dividingbyzero){
                         System.out.print("with your i index number program has to divide by zero." +
-                                " Try again and type something else!");
+                                " Try again and type something between -128 and 127, and not -1 for i!");
                         return;
                     }
                 }
