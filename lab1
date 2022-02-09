@@ -9,18 +9,18 @@ public class lab1 {
             byte i, j;
 
             try {
-                System.out.print("add i index");
+                System.out.print("add i index: ");
                 i = in.nextByte();
-                System.out.print("add j index");
+                System.out.print("add j index: ");
                 j = in.nextByte();
             }
             catch (Exception wrongnumber){
                 System.out.print("you typed a wrong number, try integer number between -128 and 127, and not -1 for i");
                 break;
             }
-            System.out.print("add n limit");
+            System.out.print("add n limit: ");
             n = in.nextInt();
-            System.out.print("add m limit");
+            System.out.print("add m limit: ");
             m = in.nextInt();
 
             in.close();
